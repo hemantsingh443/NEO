@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NGO Analysis</title>
+</head>
+<body>
+    <h1>NGO Analysis Data</h1>
+    {{ data|safe }}
+
+    <form action="/analyze" method="post">
+        <label for="column">Select a column to analyze:</label>
+        <input type="text" id="column" name="column">
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
